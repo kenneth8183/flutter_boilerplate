@@ -130,7 +130,7 @@ class MeTab extends GetView<HomeController> {
       child: Container(
         height: SizeConfig().screenHeight * .42,
         decoration: BoxDecoration(
-          color: ColorConstants.white,
+          color: white,
           borderRadius: BorderRadius.only(
             topRight: Radius.circular(20),
             topLeft: Radius.circular(20),
@@ -163,7 +163,7 @@ class MeTab extends GetView<HomeController> {
                 height: 8,
               ),
               IconTitleItem(
-                backgroundColor: ColorConstants.lightGray,
+                backgroundColor: lightGray,
                 paddingLeft: 16,
                 paddingTop: 16,
                 paddingRight: 16,

@@ -2,8 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_boilerplate/shared/shared.dart';
 
-class ThemeConfig {
-  static ThemeData createTheme({
+  ThemeData createTheme({
     required Brightness brightness,
     required Color background,
     required Color primaryText,
@@ -22,7 +21,6 @@ class ThemeConfig {
 
     return ThemeData(
       brightness: brightness,
-      buttonColor: buttonBackground,
       canvasColor: background,
       cardColor: background,
       dividerColor: divider,
@@ -38,7 +36,6 @@ class ThemeConfig {
       ),
       backgroundColor: background,
       primaryColor: accentColor,
-      accentColor: accentColor,
       // textSelectionColor: accentColor,
       // textSelectionHandleColor: accentColor,
       // cursorColor: accentColor,
@@ -49,13 +46,14 @@ class ThemeConfig {
       ),
       toggleableActiveColor: accentColor,
       appBarTheme: AppBarTheme(
-        brightness: brightness,
         color: cardBackground,
-        textTheme: TextTheme(
-          bodyText1: baseTextTheme.bodyText1!.copyWith(
-            color: secondaryText,
-            fontSize: 18,
-          ),
+        toolbarTextStyle: TextStyle(
+          color: secondaryText,
+          fontSize: 18,
+        ),
+        titleTextStyle: TextStyle(
+          color: secondaryText,
+          fontSize: 18,
         ),
         iconTheme: IconThemeData(
           color: secondaryText,
@@ -71,9 +69,7 @@ class ThemeConfig {
         colorScheme: ColorScheme(
           brightness: brightness,
           primary: accentColor,
-          primaryVariant: accentColor,
           secondary: accentColor,
-          secondaryVariant: accentColor,
           surface: background,
           background: background,
           error: error,
@@ -174,31 +170,30 @@ class ThemeConfig {
     );
   }
 
-  static ThemeData get lightTheme => createTheme(
+  ThemeData get lightTheme => createTheme(
         brightness: Brightness.light,
-        background: ColorConstants.lightScaffoldBackgroundColor,
-        cardBackground: ColorConstants.secondaryAppColor,
+        background: lightScaffoldBackgroundColor,
+        cardBackground: secondaryAppColor,
         primaryText: Colors.black,
         secondaryText: Colors.white,
-        accentColor: ColorConstants.secondaryAppColor,
-        divider: ColorConstants.secondaryAppColor,
+        accentColor: secondaryAppColor,
+        divider: secondaryAppColor,
         buttonBackground: Colors.black38,
-        buttonText: ColorConstants.secondaryAppColor,
-        disabled: ColorConstants.secondaryAppColor,
+        buttonText: secondaryAppColor,
+        disabled: secondaryAppColor,
         error: Colors.red,
       );
 
-  static ThemeData get darkTheme => createTheme(
+  ThemeData get darkTheme => createTheme(
         brightness: Brightness.dark,
-        background: ColorConstants.darkScaffoldBackgroundColor,
-        cardBackground: ColorConstants.secondaryDarkAppColor,
+        background: darkScaffoldBackgroundColor,
+        cardBackground: secondaryDarkAppColor,
         primaryText: Colors.white,
         secondaryText: Colors.black,
-        accentColor: ColorConstants.secondaryDarkAppColor,
+        accentColor: secondaryDarkAppColor,
         divider: Colors.black45,
         buttonBackground: Colors.white,
-        buttonText: ColorConstants.secondaryDarkAppColor,
-        disabled: ColorConstants.secondaryDarkAppColor,
+        buttonText: secondaryDarkAppColor,
+        disabled: secondaryDarkAppColor,
         error: Colors.red,
       );
-}

@@ -25,7 +25,7 @@ class MainTab extends GetView<HomeController> {
       crossAxisCount: 4,
       itemCount: data!.length,
       itemBuilder: (BuildContext context, int index) => new Container(
-        color: ColorConstants.lightGray,
+        color: lightGray,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [

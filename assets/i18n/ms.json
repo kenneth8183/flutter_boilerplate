@@ -1,0 +1,10 @@
+{
+	"app_name": "SkyWorlds",
+	"error_network_timeout": "Connection timeout. Please try again.",
+	"error_no_network": "No internet connection. Please try again.",
+	"error_cannot_connect_to_server": "Cannot connect to server. Please try again.",
+	"warning_no_notification": "You do not have any notification at the moment",
+	"loading": "Loading",
+	"confirm": "Confirm",
+	"cancel": "Cancel"
+}
