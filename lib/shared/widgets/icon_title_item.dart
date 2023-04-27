@@ -50,7 +50,7 @@ class IconTitleItem extends StatelessWidget {
                   icon,
                   width: 25,
                   height: 25,
-                  color: ColorConstants.secondaryAppColor,
+                  color: secondaryAppColor,
                 ),
                 SizedBox(
                   width: drawablePadding,
@@ -59,11 +59,11 @@ class IconTitleItem extends StatelessWidget {
                     child: Text(
                   title,
                   style:
-                      TextStyle(color: ColorConstants.darkGray, fontSize: 16),
+                      TextStyle(color: darkGray, fontSize: 16),
                 )),
                 Icon(
                   Icons.chevron_right,
-                  color: ColorConstants.darkGray,
+                  color: darkGray,
                 ),
               ],
             ),

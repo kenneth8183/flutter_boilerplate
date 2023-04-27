@@ -66,7 +66,7 @@ class AuthScreen extends GetView<AuthController> {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: CommonConstants.smallText,
-            color: ColorConstants.tipColor,
+            color: tipColor,
           ),
         ),
       ],

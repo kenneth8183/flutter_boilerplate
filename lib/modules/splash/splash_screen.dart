@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_boilerplate/shared/shared.dart';
+import 'package:get/get.dart';
 
 class SplashScreen extends StatelessWidget {
   @override
@@ -12,11 +13,11 @@ class SplashScreen extends StatelessWidget {
         children: [
           Icon(
             Icons.hourglass_bottom,
-            color: ColorConstants.darkGray,
+            color: darkGray,
             size: 30.0,
           ),
           Text(
-            'loading...',
+            'loading'.tr,
             style: TextStyle(fontSize: 30.0),
           ),
         ],

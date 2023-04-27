@@ -47,7 +47,7 @@ class AuthController extends GetxController {
 
       final prefs = Get.find<SharedPreferences>();
       if (res!.token.isNotEmpty) {
-        prefs.setString(StorageConstants.token, res.token);
+        prefs.setString(StorageConstants.accessToken, res.token);
         print('Go to Home screen>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
       }
     }
@@ -65,7 +65,7 @@ class AuthController extends GetxController {
 
       final prefs = Get.find<SharedPreferences>();
       if (res!.token.isNotEmpty) {
-        prefs.setString(StorageConstants.token, res.token);
+        prefs.setString(StorageConstants.accessToken, res.token);
         Get.toNamed(Routes.HOME);
       }
     }

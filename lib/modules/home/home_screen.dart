@@ -52,9 +52,9 @@ class HomeScreen extends GetView<HomeController> {
           )
         ],
         type: BottomNavigationBarType.fixed,
-        unselectedItemColor: ColorConstants.black,
+        unselectedItemColor: black,
         currentIndex: controller.getCurrentIndex(controller.currentTab.value),
-        selectedItemColor: ColorConstants.black,
+        selectedItemColor: black,
         selectedLabelStyle: TextStyle(
           fontSize: 14,
           fontWeight: FontWeight.bold,
