@@ -1,5 +1,5 @@
 {
-	"app_name": "SkyWorlds",
+	"app_name": "Sample app",
 	"error_network_timeout": "Connection timeout. Please try again.",
 	"error_no_network": "No internet connection. Please try again.",
 	"error_cannot_connect_to_server": "Cannot connect to server. Please try again.",
